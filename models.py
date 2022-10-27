@@ -167,3 +167,129 @@ def model4(seq_length=600, dropout_rate=0.1):
     model = keras.Model(inputs=inputs, outputs=outputs)
     
     return model
+
+
+def model5(seq_length=600, dropout_rate=0.1):
+    
+    # cnn original
+    
+    model = Sequential()
+    model.add(Conv1D(activation="relu", input_shape=(seq_length, 4), filters=128, kernel_size=8, padding="same"))
+    model.add(MaxPooling1D())
+    model.add(Dropout(dropout_rate))
+    model.add(Conv1D(activation="relu", filters=128, kernel_size=8, padding="same"))
+    model.add(MaxPooling1D())
+    model.add(Dropout(dropout_rate))
+    model.add(Conv1D(activation="relu", filters=128, kernel_size=8, padding="same"))
+    model.add(MaxPooling1D())
+    model.add(Dropout(dropout_rate))
+    model.add(Conv1D(activation="relu", filters=128, kernel_size=8, padding="same"))
+    model.add(MaxPooling1D())
+    model.add(Dropout(dropout_rate))
+    model.add(Flatten())
+    model.add(Dense(32))
+    model.add(Activation('relu'))
+    model.add(Dropout(dropout_rate))
+    model.add(Dense(1))
+    model.add(Activation('sigmoid'))
+    
+    return model
+
+
+def model6(seq_length=600, dropout_rate=0.1):
+    
+    # embedding + cnn original
+    
+    d_model = 16
+    enc_vocab_size = 5 # Vocabulary size for the encoder
+     
+    inputs = tf.keras.layers.Input(shape=(seq_length,))
+    outputs = Embedding(input_dim=enc_vocab_size, output_dim=d_model)(inputs)
+    outputs = Conv1D(activation="relu", input_shape=(seq_length, d_model), filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Conv1D(activation="relu", filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Conv1D(activation="relu", filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Conv1D(activation="relu", filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Flatten()(outputs)
+    outputs = Dense(32)(outputs)
+    outputs = Activation('relu')(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Dense(1)(outputs)
+    outputs = Activation('sigmoid')(outputs)
+    model = keras.Model(inputs=inputs, outputs=outputs)
+    
+    return model
+
+
+def model7(seq_length=600, dropout_rate=0.1):
+    
+    # embedding only
+    
+    d_model = 16
+    enc_vocab_size = 5 # Vocabulary size for the encoder
+     
+    inputs = tf.keras.layers.Input(shape=(seq_length,))
+    outputs = Embedding(input_dim=enc_vocab_size, output_dim=d_model)(inputs)
+    outputs = Flatten()(outputs)
+    outputs = Dense(32)(outputs)
+    outputs = Activation('relu')(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Dense(32)(outputs)
+    outputs = Activation('relu')(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Dense(1)(outputs)
+    outputs = Activation('sigmoid')(outputs)
+    model = keras.Model(inputs=inputs, outputs=outputs)
+    
+    return model
+
+def model8(seq_length=600, dropout_rate=0.1):
+    
+    # transformer + cnn original
+    
+    enc_vocab_size = 5 # Vocabulary size for the encoder
+    dec_vocab_size = enc_vocab_size # Vocabulary size for the decoder
+
+    enc_seq_length = seq_length  # Maximum length of the input sequence
+    dec_seq_length = seq_length  # Maximum length of the target sequence
+
+    h = 8  # Number of self-attention heads
+    d_k = 64  # Dimensionality of the linearly projected queries and keys
+    d_v = 64  # Dimensionality of the linearly projected values
+    d_ff = 32  # Dimensionality of the inner fully connected layer
+    d_model = 16  # Dimensionality of the model sub-layers' outputs
+    n = 1  # Number of layers in the encoder stack
+    
+    training_model = TransformerModel(enc_vocab_size, dec_vocab_size, enc_seq_length, dec_seq_length,
+                                      h, d_k, d_v, d_model, d_ff, n, dropout_rate)
+
+    inputs = tf.keras.layers.Input(shape=(enc_seq_length,))
+    outputs = training_model(inputs, training=True)
+    outputs = Conv1D(activation="relu", input_shape=(seq_length, d_model), filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Conv1D(activation="relu", filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Conv1D(activation="relu", filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Conv1D(activation="relu", filters=128, kernel_size=8, padding="same")(outputs)
+    outputs = MaxPooling1D()(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Flatten()(outputs)
+    outputs = Dense(32)(outputs)
+    outputs = Activation('relu')(outputs)
+    outputs = Dropout(dropout_rate)(outputs)
+    outputs = Dense(1)(outputs)
+    outputs = Activation('sigmoid')(outputs)
+    model = keras.Model(inputs=inputs, outputs=outputs)
+    
+    return model
