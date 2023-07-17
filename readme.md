@@ -1,6 +1,6 @@
 # Prediction of Full-Length Internal Ribosome Entry Sites (IRES) Using Deep Learning
 
-Poster at Fifth Annual RNA Therapeutics: From Concept to Clinic 2023, Worcester, MA
+**Poster at Fifth Annual RNA Therapeutics: From Concept to Clinic 2023, Worcester, MA**
 
 Internal ribosome entry sites (IRESs) are RNA elements that can recruit ribosomes and allow cap-independent translation. Analyzing IRESs is important for advancing our understanding of many biological functions and developing RNA-based therapeutics. However, IRESs do not have highly conserved primary sequences, secondary structures, or mechanisms to recruit ribosome subunit, which makes studying IRES and identify new ones challenging. A few traditional machine learning models have been developed to identify IRES and related sequence and structure features using a data-driven approach. However, it is noteworthy that most models were trained using the same oligonucleotide library with 550k 174-nt length sequences, many of which were truncated IRESs. Because full-length IRES is necessary for strong translation, we focused on developing a deep learning model to identify full-length IRES. Additionally, a deep learning model that learns directly from sequence information can also reduce the bias from feature engineering using in traditional machine learning models.
 
