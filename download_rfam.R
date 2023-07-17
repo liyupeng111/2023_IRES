@@ -1,0 +1,98 @@
+
+library(R.utils)
+library(seqinr)
+
+# Rfam
+data_folder <- 'input/rfam/'
+
+Rfam<-read.delim(paste0(data_folder, 'rfam_cis.txt'))
+
+# run once on 10/05/2022
+
+Rfam_url<-'http://http.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/'
+for(accession in Rfam$Accession){
+  file=paste0(accession, '.fa.gz')
+  download.file(paste0(Rfam_url, file), paste0(data_folder,file))
+  gunzip(paste0(data_folder,file))
+}
+
+
+# get fasta sequences
+temp_seq<-NULL
+for(accession in Rfam$Accession){
+  fa_seq <- read.fasta(file = paste0(data_folder,accession,'.fa'))
+  
+  seq_names <- names(fa_seq)
+  seq_header <- unlist(lapply(fa_seq, function(x){
+    getAnnot(x)
+  }))
+  seq <- unlist(lapply(fa_seq, function(x){
+    paste0(getSequence(x),collapse = '')
+  }))
+  seq_df<-data.frame(Accession=accession, Seq.ID=seq_names, Seq.Header=seq_header, Seq=seq)
+  temp_seq<-rbind(temp_seq, seq_df)
+}
+
+Rfam_seq<- merge(Rfam, temp_seq)
+
+Rfam_seq$Seq.len<-unlist(lapply(Rfam_seq$Seq, nchar))
+
+Rfam_family_len<-aggregate(Rfam_seq$Seq.len, by=list(Rfam_seq$ID), median)
+names(Rfam_family_len)<-c('ID', 'Seq.len.median')
+
+Rfam<-merge(Rfam_family_len, Rfam)
+Rfam$IRES<-ifelse(grepl('IRES', Rfam$Type), 1, 0)
+
+Rfam_seq$Seq<-toupper(Rfam_seq$Seq)
+Rfam_seq$Seq<-gsub('U', 'T', Rfam_seq$Seq)
+Rfam_seq$IRES<-ifelse(grepl('IRES', Rfam_seq$Type), 1, 0)
+Rfam_seq<-Rfam_seq[-grep('[^ACGTN]', Rfam_seq$Seq),]
+
+write.csv(Rfam_seq, paste0(data_folder, 'rfam_seq.csv'), row.names = F)
+
+hist(Rfam$Seq.len.median[Rfam$IRES==1])
+hist(Rfam$Seq.len.median[Rfam$IRES==0 & Rfam$Seq.len.median>100])
+
+Rfam_seq_100<-Rfam_seq[Rfam_seq$ID %in% Rfam$ID[Rfam$Seq.len.median>100], ]
+
+write.csv(Rfam_seq_100, paste0(data_folder, 'rfam_seq_100.csv'), row.names = F)
+
+Rfam_seq_100<-Rfam_seq_100[!duplicated(Rfam_seq_100$Seq.ID),]
+
+Rfam_seq_100<-Rfam_seq_100[-which(Rfam_seq_100$Seq.ID=='AJLR01000120.1/483-668'),]
+
+write.fasta(sequences=as.list(Rfam_seq_100$Seq), 
+            names=Rfam_seq_100$Seq.ID,
+            nbchar=80, 
+            file.out= paste0(data_folder, 'rfam_seq_100.fa'))
+
+# install RNAfold
+# https://www.tbi.univie.ac.at/RNA/index.html
+# run RNAfold
+
+structure<-scan(paste0(data_folder, "rfam_seq_100_structure.fa"), multi.line=T,
+          what=list("","",""), sep = "\n"
+          )
+
+structure  <-  as.data.frame(structure)
+names(structure) <- c("id","seq","secondary")
+
+secondary <- as.data.frame(do.call(rbind, lapply(structure$secondary, function(x){
+  unlist(strsplit(x, " \\("))
+})))
+colnames(secondary) <- c("secondary_str","MFE")
+secondary$MFE <-  as.numeric(sub("\\)","",secondary$MFE))
+
+structure$secondary <- secondary$secondary_str
+structure$MFE <- secondary$MFE
+structure$id <- gsub('^>', '', structure$id)
+
+Rfam_seq_100_structure<- merge(Rfam_seq_100, structure, by.x='Seq.ID', by.y='id')
+
+write.csv(Rfam_seq_100_structure, 
+          paste0(data_folder, 'rfam_seq_100_structure.csv'), row.names = F)
+
+#### remove known Rfam IRES from IRESbase
+# iresbase_blast<-read.table('data/IRESbase_blast.tab', header=F)
+# iresbase_remove <- unique(iresbase_blast$V1)
+

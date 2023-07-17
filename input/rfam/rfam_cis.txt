@@ -1,0 +1,520 @@
+Accession	ID	Type	Description
+RF00031	SECIS_1	Cis-reg	Selenocysteine insertion sequence 1
+RF00032	Histone3	Cis-reg	Histone 3' UTR stem-loop
+RF00036	RRE	Cis-reg	HIV Rev response element
+RF00037	IRE_I	Cis-reg	Iron response element I
+RF00038	PrfA	Cis-reg; thermoregulator	PrfA thermoregulator UTR
+RF00040	rne5	Cis-reg	RNase E 5' UTR element
+RF00041	Entero_OriR	Cis-reg	Enteroviral 3' UTR element
+RF00048	Entero_CRE	Cis-reg	Enterovirus cis-acting replication element
+RF00050	FMN	Cis-reg; riboswitch	FMN riboswitch (RFN element)
+RF00059	TPP	Cis-reg; riboswitch	TPP riboswitch (THI element)
+RF00061	IRES_HCV	Cis-reg; IRES	Hepatitis C virus internal ribosome entry site
+RF00080	yybP-ykoY	Cis-reg; riboswitch	yybP-ykoY manganese riboswitch
+RF00109	Vimentin3	Cis-reg	Vimentin 3' UTR protein-binding region
+RF00114	S15	Cis-reg; leader	Ribosomal S15 leader
+RF00140	Alpha_RBS	Cis-reg	Alpha operon ribosome binding site
+RF00161	nos_TCE	Cis-reg	Nanos 3' UTR translation control element
+RF00162	SAM	Cis-reg; riboswitch	SAM riboswitch (S box leader)
+RF00164	s2m	Cis-reg	Coronavirus 3' stem-loop II-like motif (s2m)
+RF00165	Corona_pk3	Cis-reg	Coronavirus 3' UTR pseudoknot
+RF00167	Purine	Cis-reg; riboswitch	Purine riboswitch
+RF00168	Lysine	Cis-reg; riboswitch	Lysine riboswitch
+RF00171	Tombus_5	Cis-reg	Tombusvirus 5' UTR
+RF00172	CAESAR	Cis-reg	ctgf/hcs24 CAESAR
+RF00174	Cobalamin	Cis-reg; riboswitch	Cobalamin riboswitch
+RF00175	HIV-1_DIS	Cis-reg	Human immunodeficiency virus type 1 dimerisation initiation site
+RF00176	Tombus_3_IV	Cis-reg	Tombusvirus 3' UTR region IV
+RF00179	GAIT	Cis-reg	GAIT element
+RF00180	REN-SRE	Cis-reg	Renin stability regulatory element (REN-SRE)
+RF00182	Corona_package	Cis-reg	Coronavirus packaging signal
+RF00183	G-CSF_SLDE	Cis-reg	G-CSF factor stem-loop destabilising element (SLDE)
+RF00184	PVX_3	Cis-reg	Potato virus X cis-acting regulatory element
+RF00185	Flavi_CRE	Cis-reg	Flavivirus 3' UTR cis-acting replication element (CRE)
+RF00192	BLV_package	Cis-reg	Bovine leukaemia virus RNA packaging signal
+RF00193	CTV_rep_sig	Cis-reg	Citrus tristeza virus replication signal
+RF00194	Rubella_3	Cis-reg	Rubella virus 3' cis-acting element
+RF00196	AMV_RNA1_SL	Cis-reg	Alfalfa mosaic virus RNA 1 5' UTR stem-loop
+RF00207	K10_TLS	Cis-reg	K10 transport/localisation element (TLS)
+RF00209	IRES_Pesti	Cis-reg; IRES	Pestivirus internal ribosome entry site (IRES)
+RF00210	IRES_Picorna_2	Cis-reg; IRES	Aphthovirus internal ribosome entry site (IRES)
+RF00214	Retro_dr1	Cis-reg	Retrovirus direct repeat 1 (dr1)
+RF00215	Tombus_3_III	Cis-reg	Tombus virus defective interfering (DI) RNA region 3
+RF00216	IRES_c-myc	Cis-reg; IRES	c-myc internal ribosome entry site (IRES)
+RF00220	Rhino_CRE	Cis-reg	Human rhinovirus internal cis-acting regulatory element (CRE)
+RF00222	IRES_Bag1	Cis-reg; IRES	Bag-1 internal ribosome entry site (IRES)
+RF00223	IRES_Bip	Cis-reg; IRES	bip internal ribosome entry site (IRES)
+RF00224	IRES_FGF2	Cis-reg; IRES	FGF-2 internal ribosome entry site (IRES)
+RF00225	IRES_Tobamo	Cis-reg; IRES	Tobamovirus internal ribosome entry site (IRES)
+RF00226	IRES_n-myc	Cis-reg; IRES	n-myc internal ribosome entry site (IRES)
+RF00227	FIE3	Cis-reg	FIE3 (ftz instability element 3') element
+RF00228	IRES_HepA	Cis-reg; IRES	Hepatitis A virus internal ribosome entry site (IRES)
+RF00229	IRES_Picorna	Cis-reg; IRES	Picornavirus internal ribosome entry site (IRES)
+RF00230	T-box	Cis-reg; leader	T-box leader
+RF00232	Spi-1	Cis-reg	Spi-1 (PU.1) 5' UTR regulatory element
+RF00233	Tymo_tRNA-like	Cis-reg	Tymovirus/Pomovirus/Furovirus tRNA-like 3' UTR element
+RF00234	glmS	Cis-reg; riboswitch	glmS glucosamine-6-phosphate activated ribozyme
+RF00243	traJ_5	Cis-reg	traJ 5' UTR
+RF00252	Alfamo_CPB	Cis-reg	Alfalfa mosaic virus coat protein binding (CPB) RNA
+RF00259	IFN_gamma	Cis-reg	Interferon gamma 5' UTR regulatory element
+RF00260	HepC_CRE	Cis-reg	Hepatitis C virus (HCV) cis-acting replication element (CRE)
+RF00261	IRES_L-myc	Cis-reg; IRES	L-myc internal ribosome entry site (IRES)
+RF00290	BaMV_CRE	Cis-reg	Bamboo mosaic potexvirus (BaMV) cis-regulatory element
+RF00362	Pospi_RY	Cis-reg	Pospiviroid RY motif stem loop
+RF00374	Gammaretro_CES	Cis-reg	Gammaretrovirus core encapsidation signal
+RF00375	HIV_PBS	Cis-reg	HIV primer binding site (PBS)
+RF00376	HIV_GSL3	Cis-reg	HIV gag stem loop 3 (GSL3)
+RF00379	ydaO-yuaA	Cis-reg; riboswitch	ydaO/yuaA leader
+RF00380	M-box	Cis-reg; riboswitch	M-box riboswitch (ykoK leader)
+RF00381	Antizyme_FSE	Cis-reg; frameshift_element	Antizyme RNA frameshifting stimulation element
+RF00382	DnaX	Cis-reg; frameshift_element	DnaX ribosomal frameshifting element
+RF00383	IS1222_FSE	Cis-reg; frameshift_element	Insertion sequence IS1222 ribosomal frameshifting element
+RF00384	Pox_AX_element	Cis-reg	Poxvirus AX element late mRNA cis-regulatory element
+RF00385	IBV_D-RNA	Cis-reg	Infectious bronchitis virus D-RNA
+RF00386	Entero_5_CRE	Cis-reg	Enterovirus 5' cloverleaf cis-acting replication element
+RF00387	IRES_FGF1	Cis-reg; IRES	FGF-1 internal ribosome entry site (IRES)
+RF00389	satBaMV_CRE	Cis-reg	Bamboo mosaic virus satellite RNA cis-regulatory element
+RF00390	UPSK	Cis-reg	UPSK RNA
+RF00391	RtT	Cis-reg	RtT RNA
+RF00433	Hsp90_CRE	Cis-reg; thermoregulator	Hsp90 cis-regulatory element
+RF00434	BTE	Cis-reg	Luteovirus cap-independent translation element (BTE)
+RF00435	ROSE	Cis-reg; thermoregulator	Repression of heat shock gene expression (ROSE) element
+RF00436	UnaL2	Cis-reg	UnaL2 LINE 3' element
+RF00437	HLE	Cis-reg	Hairy RNA localisation element (HLE)
+RF00442	ykkC-yxkD	Cis-reg; riboswitch	Guanidine-I riboswitch
+RF00447	IRES_Kv1_4	Cis-reg; IRES	Voltage-gated potassium-channel Kv1.4 IRES
+RF00448	IRES_EBNA	Cis-reg; IRES	Epstein-Barr virus nuclear antigen (EBNA) IRES
+RF00449	IRES_HIF1	Cis-reg; IRES	HIF-1 alpha IRES
+RF00453	Cardiovirus_CRE	Cis-reg	Cardiovirus cis-acting replication element (CRE)
+RF00454	p27_CRE	Cis-reg	p27 cis-regulatory element
+RF00457	IRES_mnt	Cis-reg; IRES	Mnt IRES
+RF00458	IRES_Cripavirus	Cis-reg; IRES	Cripavirus internal ribosome entry site (IRES)
+RF00459	MPMV_package	Cis-reg	Mason-Pfizer monkey virus packaging signal
+RF00460	U1A_PIE	Cis-reg	U1A polyadenylation inhibition element (PIE)
+RF00461	IRES_VEGF_A	Cis-reg; IRES	Vascular endothelial growth factor (VEGF) IRES A
+RF00462	IRES_APC	Cis-reg; IRES	APC internal ribosome entry site (IRES)
+RF00463	ApoB_5_CRE	Cis-reg	Apolipoprotein B (apoB) 5' UTR cis-regulatory element
+RF00467	RSV_PBS	Cis-reg	Rous sarcoma virus (RSV) primer binding site (PBS)
+RF00468	HCV_SLVII	Cis-reg	Hepatitis C virus stem-loop VII
+RF00470	Toga_5_CRE	Cis-reg	Togavirus 5' plus strand cis-regulatory element
+RF00480	HIV_FE	Cis-reg; frameshift_element	HIV Ribosomal frameshift signal
+RF00481	HCV_X3	Cis-reg	Hepatitis C virus 3' X element
+RF00483	IRES_IGF2	Cis-reg; IRES	Insulin-like growth factor II IRES
+RF00484	IRES_Cx32	Cis-reg; IRES	Connexin-32 internal ribosome entry site (IRES)
+RF00485	K_chan_RES	Cis-reg	Potassium channel RNA editing signal
+RF00487	IRES_Cx43	Cis-reg; IRES	Connexin-43 internal ribosome entry site (IRES)
+RF00490	S-element	Cis-reg	S-element
+RF00495	IRES_Hsp70	Cis-reg; IRES	Heat shock protein 70 (Hsp70) internal ribosome entry site (IRES)
+RF00498	EAV_LTH	Cis-reg; leader	Equine arteritis virus leader TRS hairpin (LTH)
+RF00499	Parecho_CRE	Cis-reg	Human parechovirus 1 (HPeV1) cis regulatory element (CRE)
+RF00500	TCV_H5	Cis-reg	Turnip crinkle virus (TCV) repressor of minus strand synthesis H5
+RF00501	Rota_CRE	Cis-reg	Rotavirus cis-acting replication element (CRE)
+RF00502	TCV_Pr	Cis-reg	Turnip crinkle virus (TCV) core promoter hairpin (Pr)
+RF00504	Glycine	Cis-reg; riboswitch	Glycine riboswitch
+RF00506	Thr_leader	Cis-reg; leader	Threonine operon leader
+RF00507	Corona_FSE	Cis-reg; frameshift_element	Coronavirus frameshifting stimulation element
+RF00510	Tombus_IRE	Cis-reg	Tombusvirus internal replication element (IRE)
+RF00511	IRES_KSHV	Cis-reg; IRES	Kaposi's sarcoma-associated herpesvirus internal ribosome entry site
+RF00512	Leu_leader	Cis-reg; leader	Leucine operon leader
+RF00513	Trp_leader	Cis-reg; leader	Tryptophan operon leader
+RF00514	His_leader	Cis-reg; leader	Histidine operon leader
+RF00515	PyrR	Cis-reg	PyrR binding site
+RF00516	ylbH	Cis-reg; leader	ylbH leader
+RF00517	serC	Cis-reg; leader	serC leader
+RF00518	speF	Cis-reg; leader	speF leader
+RF00520	ybhL	Cis-reg; leader	ybhL leader
+RF00521	SAM_alpha	Cis-reg; riboswitch	SAM riboswitch (alpha-proteobacteria)
+RF00522	PreQ1	Cis-reg; riboswitch	PreQ1 riboswitch
+RF00523	Prion_pknot	Cis-reg	Prion pseudoknot
+RF00524	R2_retro_el	Cis-reg	R2 RNA element
+RF00525	Flavivirus_DB	Cis-reg	Flavivirus DB element
+RF00547	IRES_TrkB	Cis-reg; IRES	TrkB IRES
+RF00549	IRES_c-sis	Cis-reg; IRES	c-sis internal ribosome entry site (IRES)
+RF00550	HepE_CRE	Cis-reg	Hepatitis E virus cis-reactive element
+RF00551	bicoid_3	Cis-reg	Bicoid 3'-UTR regulatory element
+RF00552	rncO	Cis-reg	rncO
+RF00555	L13_leader	Cis-reg; leader	Ribosomal protein L13 leader
+RF00556	L19_leader	Cis-reg; leader	Ribosomal protein L19 leader
+RF00557	L10_leader	Cis-reg; leader	Ribosomal protein L10 leader
+RF00558	L20_leader	Cis-reg; leader	Ribosomal protein L20 leader
+RF00559	L21_leader	Cis-reg; leader	Ribosomal protein L21 leader
+RF00617	cHP	Cis-reg	Flavivirus capsid hairpin cHP
+RF00620	HCV_ARF_SL	Cis-reg	Hepatitis C alternative reading frame stem-loop
+RF00626	Gurken	Cis-reg	Gurken localisation signal
+RF00632	sxy	Cis-reg	sxy 5' UTR element
+RF00634	SAM-IV	Cis-reg; riboswitch	S-adenosyl methionine (SAM) riboswitch,
+RF01046	WLE3	Cis-reg	Wingless localisation element 3 (WLE3)
+RF01047	HBV_epsilon	Cis-reg	HBV RNA encapsidation signal epsilon
+RF01051	c-di-GMP-I	Cis-reg	Cyclic di-GMP-I riboswitch
+RF01054	preQ1-II	Cis-reg; riboswitch	preQ1-II (pre queuosine) riboswitch
+RF01055	MOCO_RNA_motif	Cis-reg; riboswitch	Moco (molybdenum cofactor) riboswitch
+RF01056	Mg_sensor	Cis-reg; riboswitch	Magnesium Sensor
+RF01057	SAH_riboswitch	Cis-reg; riboswitch	S-adenosyl-L-homocysteine riboswitch
+RF01065	23S-methyl	Cis-reg	23S methyl RNA motif
+RF01066	6C	Cis-reg	6C RNA
+RF01068	mini-ykkC	Cis-reg	Guanidine-II riboswitch
+RF01069	purD	Cis-reg	purD RNA motif
+RF01070	sucA	Cis-reg	SucA RNA motif
+RF01072	TMV_UPD-PK3	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01073	GP_knot1	Cis-reg	Gag/pol translational readthrough site
+RF01074	RF_site1	Cis-reg; frameshift_element	Putative RNA-dependent RNA polymerase ribosomal frameshift site
+RF01075	TLS-PK1	Cis-reg	Pseudoknot of tRNA-like structure
+RF01076	RF_site2	Cis-reg; frameshift_element	Polymerase ribosomal frameshift site
+RF01077	TLS-PK2	Cis-reg	Pseudoknot of tRNA-like structure
+RF01078	PK-PYVV	Cis-reg	3'-terminal pseudoknot in PYVV
+RF01079	RF_site3	Cis-reg; frameshift_element	Putative RNA-dependent RNA polymerase ribosomal frameshift site
+RF01080	UPD-PKib	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01081	SBWMV1_UPD-PKe	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01082	SBWMV1_UPD-PKh	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01083	UPD-PK2	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01084	TLS-PK3	Cis-reg	Pseudoknot of tRNA-like structure
+RF01085	TLS-PK4	Cis-reg	Pseudoknot of tRNA-like structure
+RF01087	PK-repZ	Cis-reg	Pseudoknot of the regulatory region of the repZ gene
+RF01088	TLS-PK5	Cis-reg	Pseudoknot of tRNA-like structure
+RF01089	PK-repBA	Cis-reg	Pseudoknot of the regulatory region of the repBA gene
+RF01090	RF_site4	Cis-reg; frameshift_element	Edr gene ribosomal frameshift signal
+RF01091	PK-SPCSV	Cis-reg	3'-terminal pseudoknot in SPCSV
+RF01092	GP_knot2	Cis-reg	Gag/pol translational readthrough site
+RF01093	RF_site5	Cis-reg; frameshift_element	Ma3 gene ribosomal frameshift signal
+RF01094	RF_site6	Cis-reg; frameshift_element	Polymerase ribosomal frameshift site
+RF01095	PK-CuYV_BPYV	Cis-reg	3'-terminal pseudoknot of CuYV/BPYV
+RF01096	PK-HAV	Cis-reg	HepA virus 3'-terminal pseudoknot
+RF01097	RF_site8	Cis-reg; frameshift_element	Gag/pro ribosomal frameshift site
+RF01098	RF_site9	Cis-reg; frameshift_element	Gag/pro ribosomal frameshift site
+RF01099	PK-IAV	Cis-reg	Pseudoknot of influenza A virus gene
+RF01100	PK-BYV	Cis-reg	3'-terminal pseudoknot in BYV
+RF01101	TLS-PK6	Cis-reg	Pseudoknot of tRNA-like structure
+RF01102	PK1-TEV_CVMV	Cis-reg; leader	5'-leader pseudoknot of TEV/CVMV
+RF01103	UPD-PKc	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01104	SBWMV2_UPD-PKb	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01105	SBWMV2_UPD-PKl	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01106	SBWMV1_UPD-PKb	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01107	SBRMV1_UPD-PKf	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01108	BMV3_UPD-PK1	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01109	SBRMV1_UPD-PKd	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01111	SBWMV2_UPD-PKk	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01113	BMV3_UPD-PK3	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01114	TMV_UPD-PK1	Cis-reg	Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+RF01313	AHBV_epsilon	Cis-reg	Avian HBV RNA encapsidation signal epsilon
+RF01380	HIV-1_SD	Cis-reg	Human immunodeficiency virus type 1 major splice donor
+RF01381	HIV-1_SL3	Cis-reg	HIV-1 stem-loop 3 Psi packaging signal
+RF01382	HIV-1_SL4	Cis-reg	HIV-1 stem-loop 4 packaging signal
+RF01415	Flavivirus_SLIV	Cis-reg	Flavivirus 3'UTR stem loop IV
+RF01417	RSV_RNA	Cis-reg	Retroviral 3'UTR stability element
+RF01418	HIV_POL-1_SL	Cis-reg	HIV pol-1 stem loop
+RF01453	RCNMV_TE_DR1	Cis-reg	3'TE-DR1 translation enhancer element
+RF01454	RCNMV_5UTR	Cis-reg	5'UTR enhancer element
+RF01455	DPB	Cis-reg	Stem loopII regulatory element in POLB
+RF01480	rli52	Cis-reg	Listeria sRNA rli52
+RF01481	rli53	Cis-reg	Listeria sRNA rli53
+RF01482	AdoCbl_riboswitch	Cis-reg; riboswitch	AdoCbl riboswitch
+RF01483	rli56	Cis-reg	Listeria sRNA rli56
+RF01484	rli59	Cis-reg	Listeria sRNA rli59
+RF01485	rli61	Cis-reg	Listeria sRNA rli61
+RF01486	rli62	Cis-reg	Listeria sRNA rli62
+RF01490	rli51	Cis-reg	Listeria snRNA rli51
+RF01491	rli54	Cis-reg	Listeria sRNA rli54
+RF01495	ACAT	Cis-reg	Human acetyl-coA cholesterol acyltransferase mRNA
+RF01497	ALIL	Cis-reg	ALIL pseudoknot
+RF01508	BYDV_5_UTR	Cis-reg	Barley yellow dwarf virus 5'UTR
+RF01510	MFR	Cis-reg; riboswitch	M. florum riboswitch
+RF01517	iscRS	Cis-reg	iscR stability element
+RF01666	rox2	Cis-reg	Drosophila rox2 ncRNA
+RF01667	rox1	Cis-reg	Drosophila rox1 ncRNA
+RF01688	Actino-pnp	Cis-reg	Actino-pnp RNA
+RF01689	AdoCbl-variant	Cis-reg; riboswitch	AdoCbl variant RNA
+RF01692	Bacteroid-trp	Cis-reg; leader	Bacteroidete tryptophan peptide leader RNA
+RF01697	Chlorobi-RRM	Cis-reg	Chlorobi-RRM RNA
+RF01704	Glutamine-II	Cis-reg; riboswitch	Glutamine-II riboswitch (downstream peptide RNA)
+RF01707	JUMPstart	Cis-reg	JUMPstart RNA
+RF01708	L17DE	Cis-reg	L17 ribosomal protein downstream element
+RF01709	Lacto-rpoB	Cis-reg	Lacto-rpoB RNA
+RF01711	Lnt	Cis-reg	Lnt RNA
+RF01713	Moco-II	Cis-reg	Moco-II RNA
+RF01715	Pedo-repair	Cis-reg	Pedo-repair RNA
+RF01716	PhotoRC-I	Cis-reg	PhotoRC-I RNA
+RF01717	PhotoRC-II	Cis-reg	PhotoRC-II RNA
+RF01720	Pseudomon-Rho	Cis-reg	Pseudomon-Rho RNA
+RF01721	Pseudomon-groES	Cis-reg	Pseudomon-groES RNA
+RF01724	SAM-Chlorobi	Cis-reg	SAM-Chlorobi RNA
+RF01725	SAM-I-IV-variant	Cis-reg; riboswitch	SAM-I/IV variant riboswitch
+RF01726	SAM-II_long_loops	Cis-reg	SAM-II long loop
+RF01727	SAM-SAH	Cis-reg; riboswitch	SAM/SAH riboswitch
+RF01729	Termite-flg	Cis-reg	Termite-flg RNA
+RF01730	Termite-leu	Cis-reg	Termite-leu RNA
+RF01731	TwoAYGGAY	Cis-reg	TwoAYGGAY RNA
+RF01733	atoC	Cis-reg	atoC RNA
+RF01734	Fluoride	Cis-reg; riboswitch	Fluoride riboswitch
+RF01735	epsC	Cis-reg	epsC RNA
+RF01736	flg-Rhizobiales	Cis-reg	flg-Rhizobiales RNA
+RF01737	flpD	Cis-reg	flpD RNA
+RF01738	gabT	Cis-reg	gabT RNA
+RF01739	glnA	Cis-reg; riboswitch	Glutamine riboswitch
+RF01740	gyrA	Cis-reg	gyrA RNA
+RF01743	leu-phe_leader	Cis-reg; leader	leu/phe leader RNA from Lactococcus
+RF01744	livK	Cis-reg	livK RNA
+RF01745	manA	Cis-reg	manA RNA
+RF01746	mraW	Cis-reg	mraW RNA
+RF01747	msiK	Cis-reg	msiK RNA
+RF01748	nuoG	Cis-reg	nuoG RNA
+RF01749	pan	Cis-reg	pan motif
+RF01750	ZMP-ZTP	Cis-reg; riboswitch	ZMP/ZTP riboswitch
+RF01751	potC	Cis-reg	potC RNA
+RF01752	psaA	Cis-reg	psaA RNA
+RF01753	psbNH	Cis-reg	psbNH RNA
+RF01754	radC	Cis-reg	radC RNA
+RF01755	rmf	Cis-reg	rmf RNA
+RF01756	rne-II	Cis-reg	rne-II RNA
+RF01758	sucA-II	Cis-reg	sucA-II RNA
+RF01759	sucC	Cis-reg	sucC RNA
+RF01760	traJ-II	Cis-reg	traJ-II RNA
+RF01761	wcaG	Cis-reg	wcaG RNA
+RF01763	ykkC-III	Cis-reg	Guanidine-III riboswitch
+RF01764	yjdF	Cis-reg	yjdF RNA
+RF01766	cspA	Cis-reg; thermoregulator	cspA thermoregulator
+RF01767	SMK_box_riboswitch	Cis-reg; riboswitch	SMK box translational riboswitch (SAM-III)
+RF01768	flavi_FSE	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01769	greA	Cis-reg; leader	Enterobacteria greA leader
+RF01770	rimP	Cis-reg; leader	Gammaprotebacteria rimP leader
+RF01771	rnk_leader	Cis-reg; leader	Enterobacteria rnk leader
+RF01772	rnk_pseudo	Cis-reg; leader	Pseudomonas rnk leader
+RF01773	rpsL_pseudo	Cis-reg; leader	Pseudomonas rpsL leader
+RF01774	rpsL_ricks	Cis-reg; leader	Rickettsia rpsL leader
+RF01785	blv_FSE	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01786	c-di-GMP-II	Cis-reg; riboswitch	Cyclic di-GMP-II riboswitch
+RF01790	htlv_FSE	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01792	eiav_FSE	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01795	FourU	Cis-reg; thermoregulator	FourU thermometer RNA element
+RF01803	GABA3	Cis-reg	Editing element of GABA-3 exon 9
+RF01804	Lambda_thermo	Cis-reg; thermoregulator	Lambda phage CIII thermoregulator element
+RF01826	SAM_V	Cis-reg; riboswitch	SAM-V riboswitch
+RF01831	THF	Cis-reg; riboswitch	THF riboswitch
+RF01832	ROSE_2	Cis-reg; thermoregulator	Repression of heat shock gene expression (ROSE) element
+RF01833	astro_FSE	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01834	fiv_FSE	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01835	HIV_FS2	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01836	weev_FSE	Cis-reg; frameshift_element	ribosomal frameshift site
+RF01837	toga_FSE	Cis-reg; frameshift_element	togavirus ribosomal frameshift element
+RF01838	sobemo_FSE	Cis-reg; frameshift_element	sobemovirus ribosomal frameshift elemental
+RF01839	eeev_FSE	Cis-reg; frameshift_element	eastern equine encephalitis ribosomal frameshift element
+RF01840	ovine_lenti_FSE	Cis-reg; frameshift_element	ribosomal frameshift element
+RF01841	veev_FSE	Cis-reg; frameshift_element	venezuelan equine encephalitis virus ribosomal frameshift element
+RF01842	mycoplasma_FSE	Cis-reg; frameshift_element	mycoplasma ribosomal frameshift element
+RF01843	neisseria_FSE	Cis-reg; frameshift_element	neiserria ribosomal frameshift element
+RF01859	Phe_leader	Cis-reg; leader	Phenylalanine leader peptide
+RF01982	PYLIS_1	Cis-reg	Pyrrolysine insertion sequence 1
+RF01988	SECIS_2	Cis-reg	Selenocysteine insertion sequence 2
+RF01989	SECIS_3	Cis-reg	Selenocysteine insertion sequence 3
+RF01990	SECIS_4	Cis-reg	Selenocysteine insertion sequence 4
+RF01991	SECIS_5	Cis-reg	Selenocysteine insertion sequence 5
+RF02253	IRE_II	Cis-reg	Iron response element II
+RF02260	MAT2A_A	Cis-reg	MAT2A 3'UTR stem loop A
+RF02261	MAT2A_B	Cis-reg	MAT2A 3'UTR stem loop B
+RF02262	MAT2A_C	Cis-reg	MAT2A 3'UTR stem loop C
+RF02263	MAT2A_D	Cis-reg	MAT2A 3'UTR stem loop D
+RF02264	MAT2A_E	Cis-reg	MAT2A 3'UTR stem loop E
+RF02265	MAT2A_F	Cis-reg	MAT2A 3'UTR stem loop F
+RF02271	uc_338	Cis-reg	TUC338
+RF02340	DENV_SLA	Cis-reg	Dengue virus SLA
+RF02358	hsp17	Cis-reg; thermoregulator	Hsp17 thermometer
+RF02359	MS2	Cis-reg	Bacteriophage MS2 operator hairpin
+RF02370	Trp_leader_2	Cis-reg; leader	Bacillus tryptophan operon leader
+RF02371	PyrG_leader	Cis-reg; leader	PyrG leader
+RF02372	PyrC_leader	Cis-reg; leader	PyrC leader
+RF02373	PyrD_leader	Cis-reg; leader	PyrD leader
+RF02400	Hsp83_3_UTR	Cis-reg	Heat shock protein 83 3' UTR
+RF02401	ClpQY_promoter	Cis-reg	ClpQY promoter
+RF02416	TCV_H4	Cis-reg	Turnip crinkle virus 3'UTR
+RF02455	Virus_CITE_1	Cis-reg	Dianthovirus RNA2 cap-independent translation element
+RF02456	Diantho_3_UTR	Cis-reg	Dianthovirus RNA2 3'UTR stem loops
+RF02457	Virus_CITE_2	Cis-reg	Tombusvirus 3' cap-independent translation element
+RF02458	Virus_CITE_3	Cis-reg	Aureusvirus cap-independent translation element
+RF02459	Virus_CITE_4	Cis-reg	Necrovirus cap-independent translation element
+RF02460	Virus_CITE_5	Cis-reg	Satellite tobacco necrosis virus cap-independent translation element
+RF02461	Virus_CITE_6	Cis-reg	Blackcurrant reversion virus cap-independent translation element
+RF02509	PYLIS_2	Cis-reg	Pyrrolysine insertion sequence mtbB
+RF02510	PYLIS_3	Cis-reg	Pyrrolysine insertion sequence mttB
+RF02511	PYLIS_4	Cis-reg	Pyrrolysine insertion sequence TetR
+RF02512	PYLIS_5	Cis-reg	Pyrrolysine insertion sequence transposase 1
+RF02513	PYLIS_6	Cis-reg	Pyrrolysine insertion sequence transposase 2
+RF02521	Virus_CITE_7	Cis-reg	Pea enation mosaic virus-2 cap-independent translation element
+RF02522	Virus_CITE_8	Cis-reg	Pea enation mosaic virus-2 cap-independent translation element
+RF02523	ROSE_3	Cis-reg; thermoregulator	Repression of heat shock gene expression (ROSE) element
+RF02530	URE2_IRES	Cis-reg; IRES	Ure2 internal ribosome entry site (IRES)
+RF02531	NRF2_IRES	Cis-reg; IRES	Nrf2 internal ribosome entry site (IRES)
+RF02532	MNV_3UTR	Cis-reg	Murine norovirus 3'UTR
+RF02533	HAV_CRE	Cis-reg	Hepatitis A virus (HAV) cis-acting replication element (CRE)
+RF02534	Noro_CRE	Cis-reg	Norovirus cis-acting replication element (CRE)
+RF02535	ODC_IRES	Cis-reg; IRES	ODC internal ribosome entry site (IRES)
+RF02536	AEV_CRE	Cis-reg	Avian encephalitis virus (AEV) cis-acting replication element (CRE)
+RF02548	Oskar_OES	Cis-reg	Oocyte entry signal (OES) from oskar mRNA
+RF02551	DapZ	Cis-reg	ABC transporter regulator
+RF02572	babR_5UTR	Cis-reg	Brucella babR 5'UTR
+RF02584	KRAS_3UTR	Cis-reg	KRAS 3' UTR cis-regulatory element
+RF02597	shuA_thermo	Cis-reg; thermoregulator	shuA/chuA 5' UTR thermoregulator
+RF02658	IRES_RhPV	Cis-reg; IRES	Rhopalosiphum padi virus 5'UTR internal ribosome entry site
+RF02660	icaR_3p_UTR	Cis-reg	icaR 3'UTR
+RF02661	icaR_5p_UTR	Cis-reg	icaR 5' UTR
+RF02663	GmglnB1_5p_UTR	Cis-reg	GmglnB1 5'UTR
+RF02664	IRES_cyp24a1	Cis-reg; IRES	Cyp24a1 internal ribosome entry site (IRES)
+RF02680	PreQ1-III	Cis-reg; riboswitch	PreQ1-III riboswitch
+RF02683	NiCo	Cis-reg; riboswitch	NiCo riboswitch
+RF02689	hilD_3p_UTR	Cis-reg	hilD 3'UTR
+RF02697	LDH1_5p_UTR	Cis-reg	LDH1 5'UTR
+RF02698	Avalong_thermometer	Cis-reg; thermoregulator	Avalong 5' UTR thermometer
+RF02699	Avashort_thermometer	Cis-reg; thermoregulator	Avashort 5' UTR thermometer
+RF02700	HtrA_thermometer	Cis-reg; thermoregulator	HtrA 5' UTR thermometer
+RF02704	LcrF_thermometer	Cis-reg; thermoregulator	LcrF intergenic thermometer
+RF02733	ToxT_thermometer	Cis-reg; thermoregulator	ToxT 5' UTR thermometer
+RF02740	Fwd6_3p_UTR	Cis-reg;	Soft rot Enterobacteriaceae Fwd 6 3'UTR
+RF02744	Rev39_5p_UTR	Cis-reg	Soft rot Enterobacteriaceae Rev 39 5'UTR
+RF02745	Rev42_5p_UTR	Cis-reg	Soft rot Enterobacteriaceae Rev 42 5'UTR
+RF02758	RhlA_thermometer	Cis-reg; thermoregulator	RhlA 5' UTR ROSE like thermometer
+RF02759	LasI_thermometer	Cis-reg; thermoregulator	LasI 5' UTR ROSE like thermometer
+RF02762	C1_109596F_thermometer	Cis-reg; thermoregulator	C1_109596F 5' UTR thermometer
+RF02771	CnfY_thermometer	Cis-reg; thermoregulator	CnfY 5' UTR thermometer
+RF02772	AilA_thermometer	Cis-reg; thermoregulator	AilA 5' UTR thermometer
+RF02773	TrxA_thermometer	Cis-reg; thermoregulator	TrxA 5' UTR thermometer
+RF02774	KatA_thermometer	Cis-reg; thermoregulator	KatA 5' UTR thermometer
+RF02775	SodB_thermometer	Cis-reg; thermoregulator	SodB 5' UTR thermometer
+RF02776	SodC_thermometer	Cis-reg; thermoregulator	SodC 5' UTR thermometer
+RF02777	OppA_thermometer	Cis-reg; thermoregulator	OppA 5' UTR thermometer
+RF02778	FdoG1_thermometer	Cis-reg; thermoregulator	FdoG-1 5' UTR thermometer
+RF02779	PepN_thermometer	Cis-reg; thermoregulator	PepN 5' UTR thermometer
+RF02780	PutA_thermometer	Cis-reg; thermoregulator	PutA 5' UTR thermometer
+RF02781	ManX_thermometer	Cis-reg; thermoregulator	ManX 5' UTR thermometer
+RF02782	CpoB_ybgF_thermometer	Cis-reg; thermoregulator;	CpoB/ybgF ICR thermometer
+RF02783	IscS1_thermometer	Cis-reg; thermoregulator;	IscS-1 ICR thermometer
+RF02810	Lst_thermometer	Cis-reg; thermoregulator	Lst 5' UTR thermometer
+RF02811	FHbp_thermometer	Cis-reg; thermoregulator	FHbp 5' UTR thermometer
+RF02813	PA5194_thermometer	Cis-reg; thermoregulator	Pseudomonas PA5194 thermometer
+RF02815	Lig_thermometer	Cis-reg; thermoregulator	Lig 5' UTR thermometer
+RF02816	HBV_PRE_1151-1410	Cis-reg	Hepatitis B virus post-transcriptional regulatory element 1151-1410
+RF02885	SAM_VI	Cis-reg; riboswitch	SAM-VI riboswitch
+RF02887	mgtC_leader	Cis-reg; leader	Salmonella mgtC leader RNA
+RF02893	RpsF_leader	Cis-reg; leader	RpsF leader
+RF02907	patAB	Cis-reg; leader	patAB leader
+RF02911	Baculoviridae_NAE	Cis-reg	Baculoviridae Nucleocapsid Assembly essential Element
+RF02912	AAC_AAD_leader	Cis-reg; riboswitch	putative aminoglycoside riboswitch / attI site
+RF02913	pemK	Cis-reg	pemK RNA
+RF02914	DUF805b	Cis-reg	DUF805b RNA
+RF02915	DUF3800-VI	Cis-reg	DUF3800-VI RNA
+RF02916	atpB	Cis-reg	atpB RNA
+RF02917	Burkholderiales-2	Cis-reg	Burkholderiales-2 RNA
+RF02918	MDR-NUDIX	Cis-reg	MDR-NUDIX RNA
+RF02919	ilvB-OMG	Cis-reg	ilvB-OMG RNA
+RF02920	Fusobacteriales-1	Cis-reg	Fusobacteriales-1 RNA
+RF02922	RAGATH-32	Cis-reg	RAGATH-32 RNA
+RF02923	HTH-XRE	Cis-reg	HTH-XRE RNA
+RF02929	algC	Cis-reg	algC RNA
+RF02930	aspS	Cis-reg	aspS RNA
+RF02939	COG2908	Cis-reg	COG2908 RNA
+RF02940	COG3860	Cis-reg	COG3860 RNA
+RF02951	DABA-DC-AT	Cis-reg	DABA-DC-AT RNA
+RF02953	DUF1874	Cis-reg	DUF1874 RNA
+RF02954	DUF3577	Cis-reg	DUF3577 RNA
+RF02959	DUF3085	Cis-reg	DUF3085 RNA
+RF02960	DUF2800	Cis-reg	DUF2800 RNA
+RF02972	engA	Cis-reg	engA RNA
+RF02974	Fibro-purF	Cis-reg	Fibro-purF RNA
+RF02977	folE	Cis-reg	folE RNA
+RF02978	folP	Cis-reg	folP RNA
+RF02980	freshwater-2	Cis-reg	freshwater-2 RNA
+RF02981	FTHFS	Cis-reg	FTHFS RNA
+RF02982	gltS	Cis-reg	gltS RNA
+RF02991	GP20-a	Cis-reg	GP20-a RNA
+RF02992	hya	Cis-reg	hya RNA
+RF02993	ilvH	Cis-reg	ilvH RNA
+RF02999	ivy-DE	Cis-reg	ivy-DE RNA
+RF03001	leuA-Halobacteria	Cis-reg	leuA-Halobacteria RNA
+RF03002	lysM-Prevotella	Cis-reg	lysM-Prevotella RNA
+RF03003	GP20-b	Cis-reg	GP20-b RNA
+RF03005	lysM-TM7	Cis-reg	lysM-TM7 RNA
+RF03008	malK-II	Cis-reg	malK-II RNA
+RF03009	malK-III	Cis-reg	malK-III RNA
+RF03024	Rothia-sucC	Cis-reg	Rothia-sucC RNA
+RF03031	ssnA	Cis-reg	ssnA RNA
+RF03032	narK	Cis-reg	narK RNA
+RF03033	NLPC-P60	Cis-reg	NLPC-P60 RNA
+RF03038	nhaA-II	Cis-reg	nhaA-II RNA
+RF03039	Peptidase-S11	Cis-reg	Peptidase-S11 RNA
+RF03040	PGK	Cis-reg	PGK RNA
+RF03054	NMT1	Cis-reg	NMT1 RNA
+RF03057	nhaA-I	Cis-reg; riboswitch	nhaA-I RNA
+RF03058	sul1	Cis-reg; riboswitch	sul1 RNA
+RF03060	uup	Cis-reg	uup RNA
+RF03062	xerDC	Cis-reg	xerDC RNA
+RF03067	terC	Cis-reg	terC RNA
+RF03069	malK-I	Cis-reg	malK-I RNA
+RF03071	DUF1646	Cis-reg; riboswitch	DUF1646 RNA
+RF03072	raiA	Cis-reg; riboswitch	raiA RNA
+RF03074	Rhodo-rpoB	Cis-reg	Rhodo-rpoB RNA
+RF03078	chrB-a	Cis-reg	chrB-a RNA
+RF03081	DUF805	Cis-reg	DUF805 RNA
+RF03086	chrB-b	Cis-reg	chrB-b RNA
+RF03090	lysM-Actino	Cis-reg	lysM-Actino RNA
+RF03109	Thermales-rpoB	Cis-reg	Thermales-rpoB RNA
+RF03116	aCoV-5UTR	Cis-reg	Alphacoronavirus 5'UTR
+RF03117	bCoV-5UTR	Cis-reg	Betacoronavirus 5'UTR
+RF03118	gCoV-5UTR	Cis-reg	Gammacoronavirus 5'UTR
+RF03119	dCoV-5UTR	Cis-reg	Deltacoronavirus 5'UTR
+RF03120	Sarbecovirus-5UTR	Cis-reg	Sarbecovirus 5'UTR
+RF03121	aCoV-3UTR	Cis-reg	Alphacoronavirus 3'UTR
+RF03122	bCoV-3UTR	Cis-reg	Betacoronavirus 3'UTR
+RF03123	gCoV-3UTR	Cis-reg	Gammacoronavirus 3'UTR
+RF03124	dCoV-3UTR	Cis-reg	Deltacoronavirus 3'UTR
+RF03125	Sarbecovirus-3UTR	Cis-reg	Sarbecovirus 3'UTR
+RF03126	L20-Deltaproteobacteria	Cis-reg; leader	L20-Deltaproteobacteria ribosomal protein leader
+RF03127	L13-Bacteroidia	Cis-reg; leader	L13-Bacteroidia ribosomal protein leader
+RF03128	L31-Coriobacteria	Cis-reg; leader	L31-Coriobacteria ribosomal protein leader
+RF03129	L31-Corynebacteriaceae	Cis-reg; leader	L31-Corynebacteriaceae ribosomal protein leader
+RF03130	L19-Flavobacteria	Cis-reg; leader	L19-Flavobacteria ribosomal protein leader
+RF03131	L25-Gammaproteobacteria	Cis-reg; leader	L25-Gammaproteobacteria ribosomal protein leader
+RF03132	L17-Actino-Proteobacteria	Cis-reg; leader	L17-Actino-Proteobacteria ribosomal protein leader
+RF03133	S4-Fusobacteriales	Cis-reg; leader	S4-Fusobacteriales ribosomal protein leader
+RF03134	S6-S18-Chlorobi	Cis-reg; leader	S6-S18-Chlorobi ribosomal protein leader
+RF03135	L4-Archaeoglobi	Cis-reg; leader	L4-Archaeoglobi ribosomal protein leades
+RF03136	S10-Clostridia	Cis-reg; leader	S10-Clostridia ribosomal protein leader
+RF03137	S15-Methanomicrobia	Cis-reg; leader	S15-Methanomicrobia ribosomal protein leader
+RF03138	S16-Flavobacteria	Cis-reg; leader	S16-Flavobacteria ribosomal protein leader
+RF03139	S4-Bacteroidia	Cis-reg; leader	S4-Bacteroidia ribosomal protein leader
+RF03140	S4-Clostridia	Cis-reg; leader	S4-Clostridia ribosomal protein leader
+RF03141	S4-Flavobacteria	Cis-reg; leader	S4-Flavobacteria ribosomal protein leader
+RF03142	L2-Alphaproteobacteria	Cis-reg; leader	L2-Alphaproteobacteria ribosomal protein leader
+RF03143	S15-Halobacteria	Cis-reg; leader	S15-Halobacteria ribosomal protein leader
+RF03144	eL15-Euryarchaeota	Cis-reg; leader	eL15-Euryarchaeota ribosomal protein leader
+RF03151	cyano-S1	Cis-reg; leader	Cyanobacterial ribosomal protein S1 leader
+RF03155	TD-1	Cis-reg	TD-1 RNA
+RF03156	L31-Firmicutes	Cis-reg; leader	L31-Firmicutes ribosomal protein leader
+RF03157	L31-Gammaproteobacteria	Cis-reg; leader	L31-Gammaproteobacteria ribosomal protein leader
+RF03158	L31-Actinobacteria	Cis-reg; leader	L31-Actinobacteria ribosomal protein leader
+RF03161	S15-Flavobacteria	Cis-reg; leader	S15-Flavobacteria ribosomal protein leader
+RF03164	NiCo-AnGGAG	Cis-reg	NiCo-AnGGAG riboswitch
+RF03165	2dG-II	Cis-reg	2dG-II purine riboswitch
+RF03166	glycine-GGAnGA	Cis-reg	glycine-GGAnGA riboswitch
+RF03167	c-di-GMP-I-GGC	Cis-reg	c-di-GMP-I-GGC riboswitch
+RF03168	c-di-GMP-I-UAU	Cis-reg	c-di-GMP-I-UAU riboswitch
+RF03169	c-di-GMP-II-GAG	Cis-reg	c-di-GMP-II-GAG riboswitch
+RF03170	c-di-GMP-II-GCG	Cis-reg	c-di-GMP-II-GCG riboswitch
+RF03530	bglG-cis-reg	Cis-reg	cis-regulatory element of the bglG/LicT operon
+RF03532	SQ2397	Cis-reg	Cis-regulator of HTH transcription factor
+RF03535	TEG147	Cis-reg	Staphylococcus aureus small RNA TEG147
+RF03536	Flavi_TBFV_xrRNA	Cis-reg	Tick-borne Flavivirus exoribonuclease-resistant RNA element
+RF03537	Flavi_TBFV_SL6	Cis-reg	Tick-borne Flavivirus short stem-loop SL6
+RF03538	Flavi_TBFV_CRE	Cis-reg	Tick-borne Flavivirus 3' UTR cis-acting replication element (CRE)
+RF03539	Flavi_NKV_xrRNA	Cis-reg	No-known vector Flavivirus exoribonuclease-resistant RNA element
+RF03540	Flavi_NKV_CRE	Cis-reg	No-Known-Vector Flavivirus 3' UTR cis-acting replication element (CRE)
+RF03541	Flavi_ISFV_xrRNA	Cis-reg	Insect-specific Flavivirus exoribonuclease-resistant RNA element
+RF03542	Flavi_ISFV_repeat_Ra_Rb	Cis-reg	Insect-Specific Flavivirus 3' UTR repeats Ra and Rb elements
+RF03543	Flavi_ISFV_repeat_Rb	Cis-reg	Insect-Specific Flavivirus 3' UTR repeats Rb
+RF03544	Flavi_ISFV_repeat_Ra	Cis-reg	Insect-Specific Flavivirus 3' UTR repeats Ra
+RF03545	Flavi_ISFV_CRE	Cis-reg	Insect-specific Flavivirus 3' UTR cis-acting replication element (CRE)
+RF03546	Flavivirus-5UTR	Cis-reg	Flavivirus 5' UTR
+RF03547	Flavi_xrRNA	Cis-reg	General Flavivirus exoribonuclease-resistant RNA element
+RF04189	icd-II	Cis-reg	icd-II ncRNA motif
+RF04192	carA	Cis-reg	carA ncRNA motif
+RF04218	HCV_5BSL1	Cis-reg	Hepatitis C virus stem-loop I
+RF04219	HCV_J750	Cis-reg	J750 non-coding RNA (containing SLSL761 and SL783)
+RF04220	HCV_SL588	Cis-reg	SL588 non-coding RNA
+RF04221	HCV_SL669	Cis-reg	SL669 non-coding RNA
+RF04222	PLRV_xrRNA	Cis-reg	Potato leafroll virus exoribonuclease-resistant RNA

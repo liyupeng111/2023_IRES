@@ -15,11 +15,12 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv1D, Embedding, BatchNormalization
 from tensorflow.keras.layers import Embedding, Layer
 from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.utils import Sequence
 
 from keras import backend as K
 from keras.backend import softmax
 
-from focal_loss import BinaryFocalLoss
+#from focal_loss import BinaryFocalLoss
 
 
 
@@ -205,7 +206,7 @@ class MultiHeadAttention(Layer):
         return self.W_o(output)
 
 class PositionEmbeddingFixedWeights(Layer):
-    def __init__(self, sequence_length, vocab_size, output_dim, **kwargs):
+    def __init__(self, sequence_length, vocab_size, output_dim, position_embedding, **kwargs):
         super(PositionEmbeddingFixedWeights, self).__init__(**kwargs)
         #word_embedding_matrix = self.get_position_encoding(vocab_size, output_dim)   
         position_embedding_matrix = self.get_position_encoding(sequence_length, output_dim)                                          
@@ -217,8 +218,9 @@ class PositionEmbeddingFixedWeights(Layer):
         self.position_embedding_layer = Embedding(
             input_dim=sequence_length, output_dim=output_dim,
             weights=[position_embedding_matrix],
-            trainable=False
+            trainable=position_embedding
         )
+        
              
     def get_position_encoding(self, seq_len, d, n=10000):
         import numpy as np
@@ -318,9 +320,9 @@ class EncoderLayer(Layer):
 
 # Implementing the Encoder
 class Encoder(Layer):
-    def __init__(self, vocab_size, sequence_length, h, d_k, d_v, d_model, d_ff, n, rate, **kwargs):
+    def __init__(self, vocab_size, sequence_length, h, d_k, d_v, d_model, d_ff, n, rate, position_embedding, **kwargs):
         super(Encoder, self).__init__(**kwargs)
-        self.pos_encoding = PositionEmbeddingFixedWeights(sequence_length, vocab_size, d_model)
+        self.pos_encoding = PositionEmbeddingFixedWeights(sequence_length, vocab_size, d_model, position_embedding)
         self.dropout = Dropout(rate)
         self.encoder_layer = [EncoderLayer(h, d_k, d_v, d_model, d_ff, rate) for _ in range(n)]
 
@@ -340,11 +342,11 @@ class Encoder(Layer):
     
 
 class TransformerModel(Model):
-    def __init__(self, enc_vocab_size, dec_vocab_size, enc_seq_length, dec_seq_length, h, d_k, d_v, d_model, d_ff_inner, n, rate, **kwargs):
+    def __init__(self, enc_vocab_size, dec_vocab_size, enc_seq_length, dec_seq_length, h, d_k, d_v, d_model, d_ff_inner, n, rate, position_embedding=False, **kwargs):
         super(TransformerModel, self).__init__(**kwargs)
  
         # Set up the encoder
-        self.encoder = Encoder(enc_vocab_size, enc_seq_length, h, d_k, d_v, d_model, d_ff_inner, n, rate)
+        self.encoder = Encoder(enc_vocab_size, enc_seq_length, h, d_k, d_v, d_model, d_ff_inner, n, rate, position_embedding)
  
         # Set up the decoder
         #self.decoder = Decoder(dec_vocab_size, dec_seq_length, h, d_k, d_v, d_model, d_ff_inner, n, rate)
@@ -408,3 +410,125 @@ class LRScheduler(LearningRateSchedule):
         arg2 = step_num * (self.warmup_steps ** -1.5)
  
         return (self.d_model ** -0.5) * math.minimum(arg1, arg2)
+
+
+def get_structure_adj(train, max_len=600, structure_col= 'structure', seq_col= 'sequence', filter=None):
+    ## get adjacent matrix from structure sequence
+    
+    ## here I calculate adjacent matrix of each base pair, 
+    ## but eventually ignore difference of base pair and integrate into one matrix
+    Ss = []
+    for i in range(len(train)):
+        
+        structure = train[structure_col].iloc[i]
+        sequence = train[seq_col].iloc[i]
+
+        cue = []
+        a_structures = {
+            ("A", "T") : np.zeros([max_len, max_len]),
+            ("C", "G") : np.zeros([max_len, max_len]),
+            ("T", "G") : np.zeros([max_len, max_len]),
+            ("T", "A") : np.zeros([max_len, max_len]),
+            ("G", "C") : np.zeros([max_len, max_len]),
+            ("G", "T") : np.zeros([max_len, max_len]),
+        }
+        a_structure = np.zeros([max_len, max_len])
+        for i in range(min(len(structure),max_len)):
+            if structure[i] == "(":
+                cue.append(i)
+            elif structure[i] == ")":
+                start = cue.pop()
+#                 a_structure[start, i] = 1
+#                 a_structure[i, start] = 1
+                a_structures[(sequence[start], sequence[i])][start, i] = 1
+                a_structures[(sequence[i], sequence[start])][i, start] = 1
+        
+        a_strc = np.stack([a for a in a_structures.values()], axis = 2)
+        a_strc = np.sum(a_strc, axis = 2, keepdims = True)
+        a_strc = np.squeeze(a_strc)
+        if filter is not None:
+            a_strc=filter(a_strc)
+        Ss.append(a_strc)
+    
+    Ss = np.array(Ss)
+    return Ss
+
+
+
+class DataGenerator(Sequence):
+
+    def __init__(self, input_df, train_set=True, seq_col='Seq', structure_col='secondary', label_col='IRES',
+                 filter_fun=None, feature_pad_end='3end', max_len=600,
+                 shuffle=True, batch_size=64, model_name=None, tokenizer=None):
+        self.data = input_df
+        self.train_set = train_set
+        self.seq_col = seq_col
+        self.structure_col = structure_col
+        self.label_col = label_col
+        self.filter_fun = filter_fun
+        self.feature_pad_end = feature_pad_end
+        self.max_len = max_len
+        self.shuffle = shuffle
+        self.batch_size = batch_size
+        self.model_name = model_name
+        self.tokenizer = tokenizer
+        self.sample_size=input_df.shape[0]
+        self.on_epoch_end()
+        
+
+    def on_epoch_end(self):
+        self.indices = np.arange(self.data.shape[0])
+        if self.shuffle:
+            np.random.shuffle(self.indices)
+
+    def __len__(self):
+        return int(self.data.shape[0] / self.batch_size)
+
+    def __getitem__(self, idx):
+        ## Initializing Batch
+        
+        # get the indices of the requested batch
+        indices = self.indices[idx*self.batch_size:(idx+1)*self.batch_size]
+        
+        data_batch = self.data.iloc[indices]
+        #print(data_batch['IRES'].value_counts())
+        
+        #if self.train_set:
+        
+        if 'graph' in self.model_name:
+            edge = get_structure_adj(data_batch, filter=self.filter_fun, 
+                                     max_len=self.max_len, structure_col= self.structure_col, seq_col= self.seq_col)
+            
+        if 'embed' in self.model_name:
+            padding_method = 'encode_padding'
+            channel=1
+        else:
+            padding_method = 'one_hot_encode_padding'
+            channel=4
+        
+        import functions
+        custom_padding = getattr(functions, padding_method)
+        
+        if 'bert' in self.model_name:
+            node = np.zeros((self.batch_size, self.max_len))
+            for i in range(self.batch_size):
+                output=self.tokenizer.encode(data_batch[self.seq_col].iloc[i])
+                node[i]=output.ids[:self.max_len]
+        
+        else:
+            node = custom_padding(data_batch, col=self.seq_col, seq_len=self.max_len, 
+                                  padding=self.feature_pad_end, channel=channel)
+            node = np.squeeze(node)
+            
+            node_structure = custom_padding(data_batch, col=self.structure_col, seq_len=self.max_len, 
+                                  padding=self.feature_pad_end, channel=channel-1)
+            node_structure = np.squeeze(node_structure)
+        
+        y = data_batch[self.label_col]
+        
+        if 'graph' in self.model_name:
+            return [node, edge], np.array(y)
+        if 'structure' in self.model_name:
+            return [node, node_structure], np.array(y)
+        else:
+            return node, np.array(y)
